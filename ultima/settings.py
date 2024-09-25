@@ -1,3 +1,4 @@
+
 """
 Django settings for ultima project.
 
@@ -38,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base',
+    'bootstrap5',
+    'reserva',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -107,6 +111,11 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
+
+REST_FRAMEWORK = {
+    'DATE_FORMAT': "%d/%m/%Y",
+    'DATE_INPUT_FORMATS': ["%d-%m-%Y"],
+}
 
 USE_I18N = True
 
